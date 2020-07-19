@@ -2,14 +2,18 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <title>Title</title>
+        <title>Update Task</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap" rel="stylesheet">
     </head>
-    <body>
-    <h1>Update Task</h1>
-    <form method="POST" action="">
-        {% csrf_token %}
-        {{ form }}
-        <button type="submit" value="Update Task">Update</button>
-    </form>
+    <body style="background-color:black;">
+        <div style="width:600px;margin: 20px auto;padding:10px;border-radius: 3px;">
+            <h1 style="color:white;font-family: 'Open Sans', sans-serif;font-size: 50px;" >Update Task</h1>
+            <form class="mb-3 mt-5" style="color:white" method="POST" action="">
+                {% csrf_token %}
+                {{ form }}
+                <input class="btn btn-light btn-sm mb-1 ml-1" type="submit" value="Update">
+            </form>
+        </div>
     </body>
 </html>

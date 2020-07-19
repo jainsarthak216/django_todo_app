@@ -1,7 +1,7 @@
 from django.db import models
 
 class task(models.Model):
-    title = models.CharField(max_length = 50)
+    title = models.CharField(max_length = 100)
     complete = models.BooleanField(default = False)
     created = models.DateTimeField(auto_now_add = True)
 
